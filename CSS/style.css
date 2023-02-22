@@ -1,0 +1,58 @@
+/* Task Organizer */
+
+.body{
+}
+
+.navbar{
+    align-items: flex-end;
+    flex: none;
+    align-self: stretch;
+    z-index: 1;
+}
+
+.imgPic{
+position: absolute;
+width: 980px;
+height: 916px;
+right: 0px;
+top: 0px;
+
+}
+
+
+
+.trialButton{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px 30px;
+gap: 10px;
+color: white;
+position: absolute;
+width: 179px;
+height: 66px;
+left: 63px;
+top: 550px;
+
+background: #000000;
+border-radius: 50px;
+transform: rotate(-90deg);
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 26px;
+/* identical to box height */
+
+letter-spacing: 0.003em;
+
+color: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+flex-grow: 0;
+z-index: 3;
+}
