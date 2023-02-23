@@ -1,6 +1,20 @@
 /* Task Organizer */
 
-.body{
+body{
+
+}
+
+.backG{
+    position: absolute;
+right: 0px;
+top: -25px;
+left: 325px;
+
+
+/* Inside auto layout */
+
+flex: none;
+flex-grow: 0;
 }
 
 .navbar{
@@ -8,18 +22,19 @@
     flex: none;
     align-self: stretch;
     z-index: 1;
+    top: 0px;
 }
 
-.imgPic{
-position: absolute;
-width: 980px;
-height: 916px;
-right: 0px;
-top: 0px;
+.closerImg{
+
+position: relative;
+top: 90px;
+
+line-height: 72px;
+/* identical to box height */
+
 
 }
-
-
 
 .trialButton{
     display: flex;
@@ -30,11 +45,10 @@ padding: 20px 30px;
 gap: 10px;
 color: white;
 position: absolute;
-width: 179px;
-height: 66px;
+width: 169px;
+height: 56px;
 left: 63px;
-top: 550px;
-
+top: 330px;
 background: #000000;
 border-radius: 50px;
 transform: rotate(-90deg);
@@ -42,7 +56,7 @@ transform: rotate(-90deg);
 font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
-font-size: 25px;
+font-size: 20px;
 line-height: 26px;
 /* identical to box height */
 
@@ -54,5 +68,40 @@ color: #FFFFFF;
 
 flex: none;
 flex-grow: 0;
-z-index: 3;
+
+}
+
+.img{
+    display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+left: 70px;
+top: 20px;
+
+}
+
+p{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 31px;
+letter-spacing: 0.005em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+span{
+    font-size: 33px;
 }
