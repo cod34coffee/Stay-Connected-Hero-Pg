@@ -1,18 +1,19 @@
 /* Task Organizer */
 
 body{
-
+    position: relative;
 }
 
+
 .backG{
-    position: absolute;
+position: absolute;
 right: 0px;
 top: -25px;
-left: 325px;
-
-
+left: 300px;
+background-size: 600px 100px;
+background: url(/Image/Frame\ 61.svg);
 /* Inside auto layout */
-
+background-repeat: no-repeat;
 flex: none;
 flex-grow: 0;
 }
@@ -22,7 +23,60 @@ flex-grow: 0;
     flex: none;
     align-self: stretch;
     z-index: 1;
-    top: 0px;
+    top: 5px;
+}
+
+h3{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.003em;
+
+color: #000000;
+}
+
+.navSelect{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 0.003em;
+
+color: #FFFFFF;
+
+}
+
+.headingHero{
+    position: absolute;
+
+
+left: -23px;
+top: -5px;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 110px;
+/* or 130% */
+
+letter-spacing: -0.02em;
+
+color: #000000;
+/* Inside auto layout */
+flex: none;
+flex-grow: 0;
+z-index: 1;
+}
+
+
+.navbar-nav{
+    margin-left: 470px;
+    gap: 50px;
 }
 
 .closerImg{
@@ -36,40 +90,37 @@ line-height: 72px;
 
 }
 
-.trialButton{
+.freeButton{
     display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 20px 30px;
 gap: 10px;
-color: white;
-position: absolute;
-width: 169px;
-height: 56px;
-left: 63px;
-top: 330px;
-background: #000000;
-border-radius: 50px;
-transform: rotate(-90deg);
+position: relative;
+left: -28px;
 
+background: #FFFFFF;
+box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.15);
+border-radius: 100px;
+border-color: grey;
+/* Inside auto layout */
+
+flex: none;
+flex-grow: 0;
 font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 26px;
 /* identical to box height */
-
+top: 350px;
 letter-spacing: 0.003em;
-
-color: #FFFFFF;
-
-/* Inside auto layout */
-
-flex: none;
-flex-grow: 0;
-
+order: 1;
+color: #000000;
 }
+
+
 
 .img{
     display: flex;
@@ -77,15 +128,13 @@ flex-direction: column;
 align-items: flex-end;
 padding: 0px;
 gap: 30px;
-
-position: absolute;
-left: 70px;
-top: 20px;
-
+top: 35px;
+left: 30px;
 }
 
+
 p{
-    font-family: 'Epilogue';
+font-family: 'Epilogue';
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
@@ -104,4 +153,9 @@ flex-grow: 0;
 
 span{
     font-size: 33px;
+}
+
+.learnMore{
+    width: 18%;
+    border-radius: 100px;
 }
