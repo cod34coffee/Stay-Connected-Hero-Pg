@@ -2,20 +2,23 @@
 
 body{
     position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+    
+    /*background: linear-gradient(90deg, #FFFFFF 0%, #DF72F4 100%);*/
 }
 
 
 .backG{
 position: absolute;
+z-index: -1;
+top: 0px;
 right: 0px;
-top: -25px;
-left: 300px;
-background-size: 600px 100px;
-background: url(/Image/Frame\ 61.svg);
-/* Inside auto layout */
-background-repeat: no-repeat;
-flex: none;
-flex-grow: 0;
+width: 101%;
+left: 0px;
+height: auto;
+object-fit: contain;
 }
 
 .navbar{
@@ -23,7 +26,7 @@ flex-grow: 0;
     flex: none;
     align-self: stretch;
     z-index: 1;
-    top: 5px;
+    top: 10px;
 }
 
 h3{
@@ -42,7 +45,7 @@ color: #000000;
     font-family: 'Epilogue';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 15px;
 line-height: 18px;
 letter-spacing: 0.003em;
 
@@ -75,7 +78,7 @@ z-index: 1;
 
 
 .navbar-nav{
-    margin-left: 470px;
+    margin-left: 420px;
     gap: 50px;
 }
 
@@ -83,7 +86,7 @@ z-index: 1;
 
 position: relative;
 top: 90px;
-
+left: -86px;
 line-height: 72px;
 /* identical to box height */
 
@@ -122,40 +125,40 @@ color: #000000;
 
 
 
-.img{
+.imgWords{
     display: flex;
 flex-direction: column;
 align-items: flex-end;
 padding: 0px;
 gap: 30px;
-top: 35px;
-left: 30px;
+top: 0px;
+right: 0px;
+left: 372px;
+height: auto;
+width: 1020px;
+position: absolute;
 }
 
-
-p{
-font-family: 'Epilogue';
+.subtitles{
+    font-family: 'Epilogue';
 font-style: normal;
 font-weight: 500;
-font-size: 30px;
-line-height: 31px;
-letter-spacing: 0.005em;
-
-color: #000000;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+font-size: 28px;
+line-height: 11px;
+letter-spacing: 0.010em;
+color: white;
+position: relative;
+right: 50px;
 }
 
-span{
-    font-size: 33px;
+.diffChar{
+    font-size: 25px;
 }
+
+
 
 .learnMore{
     width: 18%;
     border-radius: 100px;
 }
+
