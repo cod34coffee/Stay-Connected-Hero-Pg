@@ -15,10 +15,13 @@ position: absolute;
 z-index: -1;
 top: 0px;
 right: 0px;
-width: 101%;
+width: 100%;
 left: 0px;
-height: auto;
+height: 100vh;
 object-fit: contain;
+background: url(/Image/edit.svg);
+box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.5);
+border-radius: 100px 0px 0px 0px;
 }
 
 .navbar{
@@ -53,10 +56,15 @@ color: #FFFFFF;
 
 }
 
+.navSelect:hover{
+    color: #4c0297;
+    font-weight: 600;
+}
+
 .headingHero{
     position: absolute;
 
-
+left: 10px;
 left: -23px;
 top: -5px;
 
@@ -123,6 +131,11 @@ order: 1;
 color: #000000;
 }
 
+.freeButton:hover{
+    background-color: #000000;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
 
 
 .imgWords{
@@ -133,7 +146,7 @@ padding: 0px;
 gap: 30px;
 top: 0px;
 right: 0px;
-left: 372px;
+left: 368px;
 height: auto;
 width: 1020px;
 position: absolute;
@@ -151,6 +164,10 @@ position: relative;
 right: 50px;
 }
 
+.subDiff{
+    font-size: 26px;
+}
+
 .diffChar{
     font-size: 25px;
 }
@@ -158,7 +175,124 @@ right: 50px;
 
 
 .learnMore{
-    width: 18%;
+    width: 9%;
     border-radius: 100px;
+    position: relative;
+    right: 30px;
 }
 
+.learnMore:hover{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Breaking Points */
+
+@media(min-width:1500px){
+    .subtitlesLScreen{
+        display: none;
+    }
+    .learnMore2{
+        display: none;
+    }
+}
+
+
+@media(max-width:1499.98px) {
+    .headingHero {
+      left: -33px;
+    }
+    .subtitles{
+        right: 90px;
+    }
+    .learnMore{
+        right: 90px;
+    }
+    .learnMore2{
+        display: none;
+    }
+    .subtitlesLScreen{
+        display: none;
+    }
+  }
+
+  @media(max-width:1399.98px) {
+    .headingHero, .freeButton {
+      left: -53px;
+    }
+    .subtitles{
+        right: 110px;
+        top: 30px;
+        text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.9);
+    }
+    .learnMore{
+        right: 110px;
+    }
+    .learnMore2{
+        display: none;
+    }
+    .subtitlesLScreen{
+        display: none;
+    }
+  }
+
+  @media(min-width:1200px) and (max-width:1399.98){
+    .headingHero{
+    font-size: 70px;
+    left: 73px;
+    }
+    .freeButton{
+        left: 73px;
+    }
+  }
+
+  @media(min-width:1200px){
+    .lScreen{
+        display: none;
+    }
+  }
+  @media(max-width:1199.98px) {
+    .headingHero{
+      position: absolute;
+      font-size: 60px;
+      font-weight: 800px;
+      line-height: 150%;
+      order: 1;
+    }
+
+    .subtitles{
+        right: 110px;
+        color: black;
+        font-weight: bold;
+        display: none;
+    }
+    .learnMore{
+        display: none;
+    }
+   
+    .diffChar{
+        font-size: 33px;
+    }
+    .navSelect{
+        color: black;
+        top: 5px;
+    }
+    .backG{
+        background: none;
+        box-shadow: none;
+    }
+    .imgWords{
+        display: none;
+        order: 0;
+    }
+    .closerImg{
+        display: none;
+    }
+    .navbar-nav{
+        margin-left: 520px;
+    }
+    .subtitlesLScreen{
+        display: block;
+        color: #000000;
+    }
+  }
