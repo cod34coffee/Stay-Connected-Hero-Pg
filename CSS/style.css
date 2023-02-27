@@ -199,7 +199,6 @@ right: 50px;
 
 
 @media(max-width:1499.98px) {
-  
     .subtitles{
         right: 90px;
     }
@@ -212,10 +211,10 @@ right: 50px;
     .subtitlesLScreen{
         display: none;
     }
-  }
+}
+
 
   @media(max-width:1399.98px) {
-   
     .subtitles{
         right: 110px;
         top: 30px;
@@ -230,7 +229,8 @@ right: 50px;
     .subtitlesLScreen{
         display: none;
     }
-  }
+}
+
 
   @media(min-width:1200px) and (max-width:1699.98) {
     .closerImg{
@@ -243,16 +243,19 @@ right: 50px;
     .freeButton{
         left: auto;
     }
-  }
+}
+
 
   @media(min-width:1200px){
     .lScreen{
         display: none;
         
     }
+}
 
-  }
+
   @media(max-width:1199.98px) {
+    
     .headingHero{
       position: absolute;
       font-size: 60px;
@@ -260,7 +263,6 @@ right: 50px;
       line-height: 150%;
       order: 1;
     }
-
     .subtitles{
         right: 110px;
         color: black;
@@ -270,7 +272,6 @@ right: 50px;
     .learnMore{
         display: none;
     }
-   
     .diffChar{
         font-size: 33px;
     }
@@ -293,97 +294,76 @@ right: 50px;
         margin-left: 520px;
     }
     .manDesk{
-        width: 564px;
+        width: 556px;
         height: auto;
-        
-
-
     }
     .lScreen{
         position: relative;
         display: flex;
-flex-direction: row;
-align-items: center;
+        flex-direction: row;
+        align-items: center;
+        top: 50px;
+    }
+    .rightSide{
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 45px;
     }
     .lScreenHero{
         font-family: 'Epilogue';
-font-style: normal;
-font-weight: 800;
-font-size: 70px;
-line-height: 95px;
-/* or 136% */
-
-text-align: right;
-letter-spacing: 0.03em;
-
-color: #1E1E1E;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 65px;
+        line-height: 85px;
+        text-align: right;
+        letter-spacing: 0.03em;
+        color: #1E1E1E;
+        order: 0;
     }
     .subtitlesLScreen{
         font-family: 'Epilogue';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 50px;
-/* or 167% */
-
-display: flex;
-align-items: center;
-text-align: right;
-letter-spacing: 0.03em;
-background-color: pink;
-color: #000000;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        display: block;
+        text-align: right;
+        letter-spacing: 0.03em;
+        color: #000000;
+        order: 1;
+        flex-grow: 0;
     }
     .boldRed{
         font-weight: 800;
-font-size: 40px;
-line-height: 52px;
-/* or 130% */
-text-align: right;
-
-
-letter-spacing: 0.03em;
-
-color: #D91F44;
+        font-size: 35px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #D91F44;
     }
     .freeButtonLScreen{
         display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 5px 20px;
-gap: 10px;
-
-width: 150px;
-height: 60px;
-
-background: #000000;
-border-radius: 50px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
-font-family: 'Epilogue';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 23px;
-/* identical to box height */
-
-letter-spacing: 0.003em;
-
-color: #FFFFFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding: 5px 20px;
+        gap: 10px;
+        width: 150px;
+        height: 60px;
+        background: #000000;
+        border-radius: 50px;
+        order: 2;
+        flex-grow: 0;
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 23px;
+        letter-spacing: 0.003em;
+        color: #FFFFFF;
+        top: 50px;
+        position: relative;
     }
-    .lScreenLearnB{
-        width: 22%;
-    }
+  
 }
 
