@@ -256,6 +256,20 @@ right: 50px;
 
   @media(max-width:1199.98px) {
     
+    body{
+        background: linear-gradient(180deg, #B665F5 0%, #0E346F 100%);
+        isolation: isolate;
+        background-repeat: none;
+        padding: 0px;
+        height: 100vh;
+    }
+
+    .navLogo{
+        color: white;
+    }
+
+
+
     .headingHero{
       position: absolute;
       font-size: 60px;
@@ -264,9 +278,7 @@ right: 50px;
       order: 1;
     }
     .subtitles{
-        right: 110px;
-        color: black;
-        font-weight: bold;
+
         display: none;
     }
     .learnMore{
@@ -276,7 +288,7 @@ right: 50px;
         font-size: 33px;
     }
     .navSelect{
-        color: black;
+        color: white;
         top: 5px;
     }
     .backG{
@@ -294,8 +306,9 @@ right: 50px;
         margin-left: 520px;
     }
     .manDesk{
-        width: 556px;
+        width: 535px;
         height: auto;
+        
     }
     .lScreen{
         position: relative;
@@ -319,7 +332,7 @@ right: 50px;
         line-height: 85px;
         text-align: right;
         letter-spacing: 0.03em;
-        color: #1E1E1E;
+        color: white;
         order: 0;
     }
     .subtitlesLScreen{
@@ -330,16 +343,16 @@ right: 50px;
         display: block;
         text-align: right;
         letter-spacing: 0.03em;
-        color: #000000;
+        color: white;
         order: 1;
         flex-grow: 0;
     }
     .boldRed{
         font-weight: 800;
-        font-size: 35px;
+        font-size: 37px;
         line-height: 22px;
         letter-spacing: 0.03em;
-        color: #D91F44;
+        color: black;
     }
     .freeButtonLScreen{
         display: flex;
@@ -365,5 +378,9 @@ right: 50px;
         position: relative;
     }
   
+}
+
+@media(max-width:991.98px){
+   
 }
 
