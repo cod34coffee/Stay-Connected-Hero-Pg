@@ -252,6 +252,8 @@ right: 50px;
         display: none;
         
     }
+    body{
+        height: 100vh;
     }
 }
 
