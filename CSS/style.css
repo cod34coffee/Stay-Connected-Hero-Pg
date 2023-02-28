@@ -5,8 +5,6 @@ body{
     padding: 0px;
     margin: 0px;
     
-    
-    /*background: linear-gradient(90deg, #FFFFFF 0%, #DF72F4 100%);*/
 }
 
 
@@ -185,6 +183,9 @@ right: 50px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+.connection{
+    display: none;
+}
 
 /* Breaking Points */
 
@@ -250,6 +251,7 @@ right: 50px;
     .lScreen{
         display: none;
         
+    }
     }
 }
 
@@ -380,7 +382,114 @@ right: 50px;
   
 }
 
+
 @media(max-width:991.98px){
-   
+   .connection{
+    display: block;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 37vw;
+padding-top: 20px;
+height: auto;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+   }
+   .manDesk{
+    display: none;
+    
+   }
+  
+   .lScreenHero{
+    font-size: 55px;
+    padding-left: 5px;
+   }
+   .subtitlesLScreen{
+    font-size: 22px;
+    padding-left: 5px;
+   }
+   .boldRed{
+    font-size: 27px;
+    letter-spacing: 0.01em;
+   }
+   .freeButtonLScreen{
+    top: 30px;
+   }
 }
 
+@media(min-width:900px){
+    .together{
+        display: none;
+    }
+    .rightSide2{
+        display: none;
+    }
+}
+
+@media(max-width:899.98px){
+    .connection{
+        display: none;
+    }
+    .together{
+        display: block;
+        position: relative;
+        align-self: center;
+        width: 599px;
+    }
+    .rightSide2{
+        display: block;
+    }
+    .rightSide{
+        display: none;
+    }
+    .lScreenHero2{
+        font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 95px;
+/* identical to box height, or 190% */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .subtitles2{
+        font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 26px;
+/* identical to box height */
+
+letter-spacing: 0.003em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+    }
+    .freeButtonLScreen{
+        position: relative;
+width: 411.4px;
+height: 131px;
+    }
+}
+
+@media(max-width:607.98px){
+    .rightSide2{
+        display: none;
+    }
+    .togetherSm{
+        display: none;
+    }
+}
