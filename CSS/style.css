@@ -486,7 +486,11 @@ width: 411.4px;
 height: 131px;
     }
 }
-
+@media (min-width:608px){
+    .togetherSm{
+        display: none;
+    }
+}
 @media(max-width:607.98px){
     .rightSide2{
         display: none;
