@@ -426,7 +426,9 @@ z-index: 0;
     .rightSide2{
         display: none;
     }
-   
+    .togetherSm{
+        display: none;
+    }
 }
 
 @media(max-width:899.98px){
@@ -476,14 +478,147 @@ z-index: 0;
         width: 411.4px;
         height: 131px;
     }
-}
-@media (min-width:608px){
     .togetherSm{
         display: block;
     }
+    .connection{
+        display: none;
+    }
 }
-@media(max-width:607.98px){
+@media (max-width:760px){
+    .togetherSm{
+       width: 500px;
+    }
+    .lScreenHero2{
+        font-size: 42px;
+    }
+    .subtitles2{
+        font-size: 23px;
+    }
+    .diffChar{
+        font-size: 28px;
+    }
+}
+@media(max-width:542.98px){
     .rightSide2{
         display: none;
+    }
+    .togetherSm{
+        display: none;
+    }
+    body{
+        background: url(/Image/Mask\ group.svg);
+        background-color: none;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+    .lScreen{
+        display: none;
+    }
+    .smaller{
+        display: block;
+    }
+    .closerSm{
+        box-sizing: border-box;
+
+position: absolute;
+width: 70px;
+height: 100px;
+left: 0px;
+top: 121px;
+
+background: #FFFFFF;
+/* purple */
+
+border: 1px solid #AE16F7;
+box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.2);
+border-radius: 0px 50px 50px 0px;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 51px;
+letter-spacing: 0.04em;
+
+color: #000000;
+padding-top: 29px;
+padding-left: 22px;
+    }
+    .thanYouSm{
+        box-sizing: border-box;
+
+position: absolute;
+width: 270px;
+height: 100px;
+right: 0px;
+top: 265px;
+
+background: #FFFFFF;
+/* purple */
+
+border: 1px solid #AE16F7;
+box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.15);
+border-radius: 50px 0px 00px 50px;
+
+
+    }
+
+.thanYou{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 0.04em;
+    position: relative;
+    top: 29px;
+    color: #000000;
+    
+}
+
+    .thinkSm{
+        box-sizing: border-box;
+
+position: absolute;
+width: 327px;
+height: 100px;
+left: 85px;
+top: 407px;
+
+background: #FFFFFF;
+/* purple */
+
+border: 1px solid #AE16F7;
+box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+
+    }
+    .learnSm{
+        position: absolute;
+left: 310.4px;
+top: -16px;
+    }
+    .thinkWordSm{
+        font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 51px;
+letter-spacing: 0.04em;
+
+color: #000000;
+top:29px;
+position: relative;
+left: 54px;
+    }
+
+    .learnButtonSm{
+        position: absolute;
+width: 73px;
+height: 73px;
+left: 261px;
+top: 12px;
+
     }
 }
