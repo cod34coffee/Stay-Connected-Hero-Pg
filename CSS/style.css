@@ -179,9 +179,7 @@ right: 50px;
     right: 30px;
 }
 
-.learnMore:hover{
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-}
+
 
 .connection{
     display: none;
@@ -233,17 +231,13 @@ right: 50px;
 }
 
 
-  @media(min-width:1200px) and (max-width:1699.98) {
+
+  @media(min-width:1200px) and (max-width:1359.98px) {
     .closerImg{
-        left: auto;
+        margin-left: 80px;
     }
-    .headingHero{
-        left: auto;
-        position: relative;
-    }
-    .freeButton{
-        left: auto;
-    }
+  
+   
 }
 
 
@@ -255,19 +249,20 @@ right: 50px;
     body{
         height: 100vh;
         overflow-x: hidden;
-        padding-left: 150px;
+        
     }
+   
 }
 
 
   @media(max-width:1199.98px) {
     
     body{
-        background: linear-gradient(180deg, #B665F5 0%, #0E346F 100%);
+        background-image: linear-gradient(180deg, #B665F5 , #0E346F );
         isolation: isolate;
-        background-repeat: none;
         padding: 0px;
-        height: 100vh;
+        height: 105vh;
+        background-size: 100vh;
         overflow-x: hidden;
     }
 
@@ -454,11 +449,15 @@ z-index: 0;
     .togetherSm{
         display: none;
     }
+    
 }
 
 @media(max-width:899.98px){
    
-  
+    body{
+        height: 140vh;
+        background-size: 100vh;
+    }
     .rightSide2{
         display: block;
     }
@@ -544,6 +543,7 @@ z-index: 0;
         background-color: none;
         background-repeat: no-repeat;
         background-size: 100vw;
+        height: 110vh;
     }
     .lScreen{
         display: none;
@@ -648,7 +648,7 @@ background-image: url(/Image/Stay\ Connected\ Circle.svg);
         background-repeat: no-repeat;
         position: absolute;
 width: 179px;
-height: 166px;
+height: 156px;
 left: 140px;
 top: 591px;
 background-size: 40vw;
