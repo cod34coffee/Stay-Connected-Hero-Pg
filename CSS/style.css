@@ -254,6 +254,8 @@ right: 50px;
     }
     body{
         height: 100vh;
+        overflow-x: hidden;
+        padding-left: 150px;
     }
 }
 
@@ -266,6 +268,7 @@ right: 50px;
         background-repeat: none;
         padding: 0px;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     .navLogo{
@@ -387,22 +390,21 @@ right: 50px;
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        padding: 5px 20px;
-        gap: 10px;
-        width: 150px;
-        height: 60px;
-   
+        padding: 40px 0px;
+        
+        width: 411.4px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 171px;
         order: 2;
         flex-grow: 0;
-        font-family: 'Epilogue';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 23px;
-        letter-spacing: 0.003em;
-        color: #FFFFFF;
+        
         top: 50px;
         position: relative;
+    }
+    .freeTrialButtonLScreen:hover{
+        background-image: url(/Image/Free\ Trial\ Button\ and\ Learn\ More\ White.svg);
     }
   
 }
@@ -496,10 +498,11 @@ z-index: 0;
         order: 1;
         flex-grow: 0;
     }
-    .freeButtonLScreen{
+    .freeTrialButtonLScreen{
         position: relative;
         width: 411.4px;
         height: 131px;
+        top: 42px;
     }
     .togetherSm{
         display: block;
@@ -550,86 +553,60 @@ z-index: 0;
     }
     .closerSm{
         box-sizing: border-box;
-order: 0;
+
 position: absolute;
 width: 70px;
 height: 100px;
 left: 0px;
 top: 121px;
-
-background: #FFFFFF;
-/* purple */
-
-border: 1px solid #AE16F7;
-box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.2);
-border-radius: 0px 50px 50px 0px;
-
-font-family: 'Epilogue';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 51px;
-letter-spacing: 0.04em;
-
-color: #000000;
-padding-top: 29px;
-padding-left: 22px;
+background-repeat: no-repeat;
+background-image: url(/Image/CloserSVG.svg);
     }
     .thanYouSm{
         box-sizing: border-box;
-order: 1;
-position: absolute;
-width: 270px;
-height: 100px;
-right: 0px;
-top: 265px;
 
-background: #FFFFFF;
+position: absolute;
+height: 150px;
+right: 0px;
+
+background-repeat: no-repeat;
+top: 265px;
+background-image: url(/Image/ThanYouSVG.svg);
 /* purple */
 
-border: 1px solid #AE16F7;
-box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.15);
-border-radius: 50px 0px 00px 50px;
+background-size: 50vw;
+
 
 
     }
 
-.thanYou{
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 51px;
-    letter-spacing: 0.04em;
-    position: relative;
-    top: 29px;
-    color: #000000;
-    order: 2;
-}
+
 
     .thinkSm{
         box-sizing: border-box;
-order: 3;
+
 position: absolute;
 width: 327px;
-height: 100px;
-left: 85px;
+height: 150px;
+left: 95px;
 top: 407px;
-
-background: #FFFFFF;
-/* purple */
-
-border: 1px solid #AE16F7;
-box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
-border-radius: 50px;
+background-size: 60vw;
+background-repeat: no-repeat;
+background-image:url(/Image/ThinkLearnButtonWhite.svg);
 
     }
-    .learnSm{
+
+    .thinkSm:hover{
+        background-image: url(/Image/ThinkButtonPinkBlack.svg);
+    }
+
+  /*  .learnSm{
         position: absolute;
 left: 310.4px;
 top: -16px;
     }
-    .thinkWordSm{
+    */
+  /*  .thinkWordSm{
         font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
@@ -642,8 +619,8 @@ top:29px;
 position: relative;
 left: 54px;
     }
-
-    .learnButtonSm{
+*/
+ /*   .learnButtonSm{
         position: absolute;
 width: 73px;
 height: 73px;
@@ -651,9 +628,10 @@ left: 261px;
 top: 12px;
 
     }
+    */
     .stayCSmScreen{
       
-order: 5;
+
 
 position: absolute;
 width: 160.12px;
@@ -665,18 +643,18 @@ background-repeat: no-repeat;
 background-image: url(/Image/Stay\ Connected\ Circle.svg);
 
     }
-    .freeButtonSmScreen{
-        background-image: url(/Image/Frame\ 63.svg);
+    .freeTrialStayButton{
+        background-image: url(/Image/FreeTrialStayButtonBlack.svg);
         background-repeat: no-repeat;
         position: absolute;
 width: 179px;
-height: 66px;
-left: 210px;
-top: 631px;
-
+height: 166px;
+left: 140px;
+top: 591px;
+background-size: 40vw;
     }
-    .freeButtonSmScreen:hover{
-        background-image: url(/Image/Frame\ 63\ Variant\ 2.svg);
+    .freeTrialStayButton:hover{
+        background-image: url(/Image/FreeTrialStayButtonWhite.svg);
     }
     
 }
