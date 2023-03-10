@@ -23,13 +23,16 @@
     <nav class="navbar mx-4 navbar-expand-xl">
         <div class="container-fluid">
           <a class="navbar-brand"  href="#"><h4 class="navLogo"><b>snap</b></h4></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="material-symbols-outlined">
+          <button class="navbar-toggler myNav2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-symbols-outlined firstMenuButton">
               menu
             </span>
           </button>
+          <a class="myNav3">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </a>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 twoDrop">
               <li class="nav-item me-4 dropdown" >
                 <a class="nav-link  navListCSS " role="button" data-bs-auto-close="true" data-bs-toggle="dropdown" aria-expanded="false" href="#"><p class="navSelect">Features</p></a>
                 <ul class="dropdown-menu dropdown-menu-end oneDrop  " style="margin-top: -5px; width: 154px; ">
@@ -56,7 +59,16 @@
           </div>
         </div>
     </nav>
-    
+    <div id="myNav" class="overlay myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
     <div class="container container-fluid bodyInner " style="float: right;">
         <div class="row" style="margin-right: 0px;">
           <div class="col-3 col-xl-4 col-l-6 col-m-6 closerImg">
@@ -121,5 +133,15 @@
 <!--Bootstrap Script-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<!--Script for the menu with the hamburger-->
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+</script>
 </body>
 </html>
