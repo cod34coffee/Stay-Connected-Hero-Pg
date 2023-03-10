@@ -7,6 +7,20 @@ body{
     
 }
 
+.oneDrop{
+    background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border-color: transparent ;
+}
+
+.oneDrop li a{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+
+}
 
 .backG{
 position: absolute;
@@ -29,7 +43,12 @@ border-radius: 100px 0px 0px 0px;
     z-index: 1;
     top: 10px;
 }
-
+.navLogo{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+}
 h3{
     font-family: 'Epilogue';
 font-style: normal;
@@ -62,14 +81,13 @@ color: #FFFFFF;
 .headingHero{
     position: absolute;
 
-left: 10px;
 left: -23px;
 top: -5px;
 
 font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
-font-size: 80px;
+font-size: 100px;
 line-height: 110px;
 /* or 130% */
 
@@ -92,7 +110,7 @@ z-index: 1;
 
 position: relative;
 top: 90px;
-left: -86px;
+left: -105px;
 line-height: 72px;
 /* identical to box height */
 
@@ -210,6 +228,12 @@ right: 50px;
     .subtitlesLScreen{
         display: none;
     }
+    .closerImg{
+        margin-left: 20px;
+    }
+    .headingHero{
+        font-size: 85px;
+    }
 }
 
 
@@ -228,6 +252,7 @@ right: 50px;
     .subtitlesLScreen{
         display: none;
     }
+   
 }
 
 
@@ -270,7 +295,7 @@ right: 50px;
         color: white;
     }
 
-
+  
 
     .headingHero{
       position: absolute;
@@ -455,11 +480,13 @@ z-index: 0;
 @media(max-width:899.98px){
    
     body{
-        height: 140vh;
+        height: 160vh;
         background-size: 100vh;
     }
+   
     .rightSide2{
         display: block;
+        align-items: center;
     }
     .rightSide{
         display: none;
@@ -468,12 +495,12 @@ z-index: 0;
         font-family: 'Epilogue';
         font-style: normal;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 55px;
         line-height: 95px;
         /* identical to box height, or 190% */
-
+        position: relative;
         letter-spacing: 0.03em;
-
+        text-align: center;
         color: #FFFFFF;
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -482,10 +509,10 @@ z-index: 0;
         font-family: 'Epilogue';
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
-        line-height: 26px;
+        font-size: 27px;
+        line-height: 36px;
         /* identical to box height */
-
+text-align: center;
         letter-spacing: 0.003em;
 
         color: #FFFFFF;
@@ -502,6 +529,8 @@ z-index: 0;
         width: 411.4px;
         height: 131px;
         top: 42px;
+        background-size: 32vw;
+        background-position: center;
     }
     .togetherSm{
         display: block;
@@ -516,12 +545,24 @@ z-index: 0;
     }
     .lScreenHero2{
         font-size: 42px;
+        left: 17px;
     }
     .subtitles2{
         font-size: 23px;
     }
     .diffChar{
         font-size: 28px;
+    }
+    body{
+        height: 143vh;
+    }
+    .freeTrialButtonLScreen{
+        width: 401.4px;
+        background-size: 28vw;
+        background-position: center;
+    }
+    .rightSide2{
+        align-items: center;
     }
 }
 
