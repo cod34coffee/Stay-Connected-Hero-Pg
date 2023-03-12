@@ -22,6 +22,9 @@ font-size: 15px;
 
 }
 
+
+
+
 .backG{
 position: absolute;
 z-index: -1;
@@ -126,19 +129,20 @@ padding: 20px 30px;
 gap: 10px;
 position: relative;
 left: -28px;
-
+text-decoration: none;
 background: #FFFFFF;
 box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.15);
 border-radius: 100px;
 border-color: grey;
 /* Inside auto layout */
-
+width: 179px;
+height: 96px;
 flex: none;
 flex-grow: 0;
 font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 25px;
 line-height: 26px;
 /* identical to box height */
 top: 350px;
