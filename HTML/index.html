@@ -48,13 +48,13 @@
                 </a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link">
+                <a class="nav-link" href="#">
                   <p class="navSelect">Careers</p>
                 </a>
                </li>
             </ul>
             <div class="d-flex rightNav nav-item">
-              <a class="nav-link" type="button"><p class="navSelect mt-2">Login</p></a>
+              <a class="nav-link" type="button" href="#"><p class="navSelect mt-2">Login</p></a>
             </div>
           </div>
         </div>
@@ -62,10 +62,40 @@
     <div id="myNav" class="overlay myNav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <!--Lottie made by Vinayak Kumawat from LottieFiles-->
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wcwcr5u6.json" style="position: absolute;" class="lottieOne"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay></lottie-player>
+        <ul class="">
+          <div class="subnav">
+            <a class="subnavbtn" role="button" data-bs-toggle="collapse" data-bs-target="submenu" data-bs-auto-close="true" aria-expanded="false" href="#submenu"><p class="smallMenu">Features</p></a>
+           
+            <div class="subnav-content" id="submenu" >
+                <a class="dropdown-item" href="#"><img src="/Image/icon-todo 2.png" class="smallDropMenu" alt="">Todo List</a>
+                <a class="dropdown-item" href="#" ><img src="/Image/icon-calendar 2.png" class="smallDropMenu" alt="">Calendar</a>
+                <a class="dropdown-item" href="#" ><img src="/Image/icon-reminders 2.png" class="smallDropMenu" alt="">Reminders</a>
+                <a class="dropdown-item" href="#"><img src="/Image/icon-planning 2.png" class="smallDropMenu" alt="">Planning</a>
+            </div>
+          </div>
+          <div class="nav-item smallListP">
+            <a class="nav-link" href="#" >
+              <p class="smallMenu">About</p>
+            </a>
+          </div>
+          <div class="nav-item smallListP">
+            <a class="nav-link" href="#">
+              <p class="smallMenu">Careers</p>
+            </a>
+          </div>
+          <div class="nav-item loginMenu">
+            <a href="#" class="nav-link">
+              <p class="smallLoginMenu">Login</p>
+            </a>
+          </div>
+          <div class="nav-item loginMenu">
+            <a href="#" class="nav-link">
+              <p class="smallFreeMenu">Start Free</p>
+            </a>
+          </div>
+        </ul>
       </div>
     </div>
 
@@ -143,5 +173,7 @@
     document.getElementById("myNav").style.width = "0%";
   }
 </script>
+<!--Script for the lottie-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

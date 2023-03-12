@@ -360,15 +360,14 @@ right: 50px;
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
+        background-color: white;
         overflow-x: hidden;
         transition: 0.5s;
       }
       
       .overlay-content {
         position: relative;
-        top: 25%;
+        top: 10%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
@@ -377,24 +376,93 @@ right: 50px;
       .overlay a {
         padding: 8px;
         text-decoration: none;
-        font-size: 36px;
+        font-size: 30px;
         color: #818181;
         display: block;
         transition: 0.3s;
+        
       }
       
       .overlay a:hover, .overlay a:focus {
-        color: #f1f1f1;
+        color: rgb(5, 5, 119);
+        font-weight: bold;         
       }
       
       .overlay .closebtn {
         position: absolute;
-        top: 20px;
-        right: 45px;
+        top: -10px;
+        right: 25px;
         font-size: 60px;
       }
 
-      
+      .smallMenu{
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 10px 13px 2px;
+gap: 10px;
+width: 197px;
+height: 43px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+      }
+      .smallListP{
+        top: 10px;
+        z-index: 1;
+        position: relative;
+      }
+      .smallLoginMenu{
+        display: flex;
+flex-direction: column;
+text-align: center;
+gap: 10px;
+
+width: 197px;
+height: 43px;
+
+
+/* Inside auto layout */
+
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+      }
+      .loginMenu{
+        justify-content: center;
+        position: relative;
+        display:flex;
+        top: 160px;
+        
+      }
+
+      .smallFreeMenu{
+        box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 13px 53px;
+gap: 10px;
+
+
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 13px;
+
+/* Inside auto layout */
+
+flex: none;
+flex-grow: 0;
+      }
 
       .firstMenuButton{
         display: none;
