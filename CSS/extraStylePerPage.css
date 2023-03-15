@@ -1,10 +1,9 @@
 /* Task Organizer */
 
-body{
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    
+
+
+.featPageBody, .careerPageBody, .aboutPageBody {
+    background-image: linear-gradient(180deg, #B665F5 , #0E346F );
 }
 
 .oneDrop{
@@ -46,11 +45,12 @@ border-radius: 100px 0px 0px 0px;
     z-index: 1;
     top: 10px;
 }
-.navLogo{
+.navLogoFeature, .navLogoCareer, .navLogoAbout, .navLogoFree{
     font-family: 'Epilogue';
 font-style: normal;
 font-weight: 700;
 font-size: 35px;
+color: white;
 }
 h3{
     font-family: 'Epilogue';
@@ -456,6 +456,8 @@ align-items: flex-start;
 padding: 13px 53px;
 gap: 10px;
 
+
+
 background: #FFFFFF;
 border: 1px solid #000000;
 border-radius: 13px;
@@ -699,14 +701,6 @@ text-align: center;
     }
 }
 
-@media (max-width:620px){
-    .smallFreeMenu{
-        font-size: large;
-
-    }
-    
-}
-
 @media(min-width:543px){
     .smaller{
         display: none;
@@ -727,8 +721,6 @@ text-align: center;
         background-size: 100vw;
         height: 110vh;
     }
-
-    
 
     .overlay a {
         font-size: 20px
@@ -853,18 +845,4 @@ background-size: 40vw;
         background-image: url(/Image/FreeTrialStayButtonWhite.svg);
     }
     
-}
-
-@media(max-width:500px){
-    .smallFreeMenu{
-        font-size: medium;
-
-    }
-    .smallFreeMenu, .loginMenu:hover{
-        font-size: small;
-    }
-
-    .lottieOne{
-        bottom: -130px;
-    }
 }
