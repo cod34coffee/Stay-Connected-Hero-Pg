@@ -295,7 +295,7 @@ right: 50px;
         background-image: linear-gradient(180deg, #B665F5 , #0E346F );
         isolation: isolate;
         padding: 0px;
-        height: 105vh;
+        height: 120vh;
         background-size: 100vh;
         overflow-x: hidden;
     }
@@ -702,7 +702,7 @@ text-align: center;
         font-size: 28px;
     }
     body{
-        height: 143vh;
+        height: 153vh;
     }
     .freeTrialButtonLScreen{
         width: 401.4px;

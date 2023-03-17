@@ -5,6 +5,8 @@
     <meta charset="iso-8859-2">
     <meta http-equiv="Content-Type" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="/CSS/loginModal.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/extraStylePerPage.css">
     <!--Google Fonts-->
@@ -103,33 +105,40 @@
 
 
     <!--Modal-->
+    <!--Another modal example of W3schools that helped me make this is at this link = https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
     <div id="id01" class="modal">
-      <!--Modal's Content-->
-      <form class="modal-content animate" action="/action_page.php" method="post">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <h1>Login</h1>
-        </div>
-    
-        <div class="containerM">
+  
+      <form class="modal-content animate" style="width: 70%;" name="loginFN" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3 class="loginTitle"><b>Login</b></h3>
+      </div>
+
+      <div class="container innerForm px-5 ">
           <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-    
+          <input type="text" placeholder="Enter Username" id="uname"   class="formInput mb-4" name="uname" required>
+
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" id="psw" class="formInput" name="psw" required>
             
-          <button class="btn btn-primary" type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-    
-        <div class="containerM" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
-          <span class="psw ">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
+          
+      </div>
+      <div class="container">
+      <div class=" innerForm row px-3 g-3 d-flex mx-auto justify-content-center">
+        <a type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn col-s-12 col-md-5 mx-2">Cancel</a>
+        <a type="submit " href="/HTML/freePage.html" class="loginLBtn col-s-12 col-md-5 mx-2"  >Login</a>
+        <p id="successMessage" class="col-12" style="position: relative; text-align: end; right: 20px; top: 15px; color: green; display: none;">Success, Thank you for login in.</p>
+      </div>
+      </div>
+      <div class="container innerForm" style="background-color:#f1f1f139">
+        <label class="bottomLink mx-4 ">
+          <span class=" remOne mx-1"><input type="checkbox" checked="checked" name="remember"> Remember me</span>
+        
+        <span class="psw passOne mx-1">Forgot <a href="#">password?</a></span>
+        </label>
+      </div>
+    </form>
+  </div>
 
 
 

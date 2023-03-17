@@ -5,7 +5,9 @@
     <meta charset="iso-8859-2">
     <meta http-equiv="Content-Type" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style CSS-->
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/loginModal.css">
     <!--Google Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +103,7 @@
         <div class="row" style="margin-right: 0px;">
           <div class="col-3 col-xl-4 col-l-6 col-m-6 closerImg">
             <h1 class="headingHero"><b>Closer <br> Than You Think</b></h1>
-            <a href="/HTML/connectPage.html" class="freeButton">Free Trial</a>
+            <a href="/HTML/freePage.html" class="freeButton">Free Trial</a>
           </div>
           <div class="col-9 col-xl-8 col-l-6 col-m-6 imgWords" style=" height: 100vh; width: 76%;">
             <div class="backG" alt=""></div>
@@ -127,7 +129,7 @@
           <h1 class="lScreenHero">Closer Than<br>You Think</h1> 
           <p class="subtitlesLScreen">Your team can stay</p>
           <p class="subtitlesLScreen"><span class="boldRed"><b>connected</b> </span> anywhere.</p>
-          <div class="freeTrialButtonLScreen"></div>
+          <a href="/HTML/freePage.html" class="freeTrialButtonLScreen"></a>
         </div>
         <div class="col-12 rightSide2 ">
           <h1 class="lScreenHero2">Closer Than You Think</h1>
@@ -135,7 +137,7 @@
             <p class="subtitles2">Making video call, chat, and optimization of</p>
             <p class="subtitles2 subDiff">productivity easier, even for the</p>
             <p class="subtitles2"><span class="diffChar"><b>skilled procrastinators.</b></span></p>   
-            <div class=" freeTrialButtonLScreen col-5 col-md-5"></div>  
+            <a href="/HTML/freePage.html" class=" freeTrialButtonLScreen col-5 col-md-5"></a>  
         </div>
       </div>
     </div>
@@ -149,7 +151,7 @@
         <div class="col-8 thinkSm">
         </div>
         <div>
-        <div class="col-5 freeTrialStayButton"></div>
+        <a href="/HTML/freePage.html" class="col-5 freeTrialStayButton"></a>
         </div>
       </div>
     </div>
@@ -157,41 +159,52 @@
 
 
     <!--Modal-->
+    <!--Another modal example of W3schools that helped me make this is at this link = https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
     <div id="id01" class="modal">
-      <!--Modal's Content-->
-      <form class="modal-content animate" action="/action_page.php" method="post">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <h1>Login</h1>
-        </div>
-    
-        <div class="containerM">
+  
+      <form class="modal-content animate" style="width: 70%;" name="loginFN" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h3 class="loginTitle"><b>Login</b></h3>
+      </div>
+
+      <div class="container innerForm px-5 ">
           <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-    
+          <input type="text" placeholder="Enter Username" id="uname"   class="formInput mb-4" name="uname" required>
+
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" id="psw" class="formInput" name="psw" required>
             
-          <button class="btn btn-primary" type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-    
-        <div class="containerM" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
-          <span class="psw ">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
+          
+      </div>
+      <div class="container">
+      <div class=" innerForm row px-3 g-3 d-flex mx-auto justify-content-center">
+        <a type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn col-s-12 col-md-5 mx-2">Cancel</a>
+        <a type="submit " href="/HTML/freePage.html" class="loginLBtn col-s-12 col-md-5 mx-2"  >Login</a>
+        <p id="successMessage" class="col-12" style="position: relative; text-align: end; right: 20px; top: 15px; color: green; display: none;">Success, Thank you for login in.</p>
+      </div>
+      </div>
+      <div class="container innerForm" style="background-color:#f1f1f139">
+        <label class="bottomLink mx-4 ">
+          <span class=" remOne mx-1"><input type="checkbox" checked="checked" name="remember"> Remember me</span>
+        
+        <span class="psw passOne mx-1">Forgot <a href="#">password?</a></span>
+        </label>
+      </div>
+    </form>
+  </div>
 
 
 
+<!--Scripts Below with information on where I found it.-->
 
-<!--Scripts-->
+
 <!--Bootstrap Script-->
+<!--These link can be found on the Bootstrap website at this link here = https://getbootstrap.com/docs/5.2/getting-started/introduction/-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
 <!--Script for the menu with the hamburger-->
 <script>
   function openNav() {
@@ -202,7 +215,25 @@
     document.getElementById("myNav").style.width = "0%";
   }
 </script>
-<!--Script for the lottie-->
+
+
+<!--Script for the lottie at the LottieFiles webpage-->
+<!--To find the script and everything else make sure to select HTML-->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+<!--Script for Modal-->
+<!--More Info Can Be Found At W3school Link Here = https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
 </body>
 </html>

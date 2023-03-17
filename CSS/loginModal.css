@@ -34,11 +34,13 @@ input[type=text], input[type=password] {
     justify-content: center;
     padding: 5px 5px;
     gap: 10px;
+    border-width: 1;
+    border-color: #000;
+    border-style: solid;
 
-    position: relative;
-    left: 90px;
+    left: 5px;
     top: 0px;
-
+    text-decoration: none;
     background: #0237C2;
     border-radius: 50px;
 
@@ -69,13 +71,13 @@ input[type=text], input[type=password] {
     flex-direction: row;
     padding: 5px 5px;
     justify-content: center;
-    position: relative;
-    left: 30px;
     top: 0px;
     gap: 10px;
     background: #C40606;
     border-radius: 50px;  
-
+    border-width: 1;
+    border-color: #000;
+    border-style: solid;
 
     font-family: 'Inter';
     font-style: normal;
@@ -83,7 +85,7 @@ input[type=text], input[type=password] {
     font-size: 20px;
     line-height: 61px;
     /* identical to box height */
-
+    text-decoration: none;
 
     color: #FCF9FD;
 
@@ -179,12 +181,10 @@ input[type=text], input[type=password] {
   }
   
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
+  @media(max-width: 600px) {
+    .passOne, .remOne{
+        font-size: small;
     }
-    .cancelbtn {
-       width: 100%;
-    }
+ 
   }
+

@@ -21,17 +21,13 @@
     <title>Remote Connections</title>
 </head>
 
-<body class="freePage">
+<body class="freePage" style="background: white;">
     <nav class="navbar mx-4 navbar-expand-xl">
         <div class="container-fluid">
           <a class="navbar-brand"  href="/HTML/index.html"><h4 class="navLogoFree"><b>LoGo</b></h4></a>
-          <button class="navbar-toggler myNav2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="material-symbols-outlined firstMenuButton">
-              menu
-            </span>
-          </button>
-          <a class="myNav3">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          
+          <a class="myNav3" style="color: black;">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;</span>
           </a>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 twoDrop">
@@ -107,7 +103,7 @@
     <!--Another modal example of W3schools that helped me make this is at this link = https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
     <div id="id01" class="modal">
   
-      <form class="modal-content animate" style="width: 50%;" name="loginFN" action="/action_page.php" method="post">
+      <form class="modal-content animate" style="width: 70%;" name="loginFN" action="/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <h3 class="loginTitle"><b>Login</b></h3>
@@ -115,7 +111,7 @@
 
       <div class="container innerForm px-5 ">
           <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="uname" class="formInput mb-4" name="uname" required>
+          <input type="text" placeholder="Enter Username" id="uname"   class="formInput mb-4" name="uname" required>
 
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" id="psw" class="formInput" name="psw" required>
@@ -123,17 +119,17 @@
           
       </div>
       <div class="container">
-      <div class="container innerForm row d-flex mx-auto">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn col-5">Cancel</button>
-        <button type="submit " onclick="success()" class="loginLBtn col-5" >Login</button>
+      <div class=" innerForm row px-3 g-3 d-flex mx-auto justify-content-center">
+        <a type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn col-s-12 col-md-5 mx-2">Cancel</a>
+        <a type="submit " href="/HTML/freePage.html" class="loginLBtn col-s-12 col-md-5 mx-2"  >Login</a>
         <p id="successMessage" class="col-12" style="position: relative; text-align: end; right: 20px; top: 15px; color: green; display: none;">Success, Thank you for login in.</p>
       </div>
       </div>
       <div class="container innerForm" style="background-color:#f1f1f139">
-        <label class="bottomLink mx-4">
-          <span><input type="checkbox" checked="checked" name="remember"> Remember me</span>
+        <label class="bottomLink mx-4 ">
+          <span class=" remOne mx-1"><input type="checkbox" checked="checked" name="remember"> Remember me</span>
         
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="psw passOne mx-1">Forgot <a href="#">password?</a></span>
         </label>
       </div>
     </form>
@@ -180,21 +176,7 @@
   }
 </script>
 
-<!--Script for the success message on the Modal-->
-<!--The information I used to help me is at this link here = This link to assist in making the function: https://www.w3schools.com/howto/howto_js_validation_empty_input.asp-->
-<script>
-  function success(){
-    var x = document.forms["loginFN"]["uname"].value;
-    var y = document.forms["loginFN"]["psw"].value;
-    if(x=="" || x == null & y=="" || y == null){
-      document.getElementById("uname").style.borderColor = "red";
-      document.getElementById("psw").style.borderColor = "red";
-      return false;
-    }else
-    document.getElementById("successMessage").style.display = "block";
-    document.getElementById('id01').style.display = "none";
-  }
-</script>
+
 
 </body>
 </html>
