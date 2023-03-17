@@ -52,7 +52,7 @@
                </li>
             </ul>
             <div class="d-flex rightNav nav-item">
-              <a class="nav-link" type="button" href="#"><p class="navSelect mt-2">Login</p></a>
+              <a class="nav-link" type="button" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><p class="navSelect mt-2">Login</p></a>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             </a>
           </div>
           <div class="nav-item loginMenu ">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
               <p class="smallLoginMenu">Login</p>
             </a>
           </div>
@@ -102,6 +102,37 @@
 
 
 
+
+
+
+    <!--Modal-->
+    <div id="id01" class="modal">
+      <!--Modal's Content-->
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h1>Login</h1>
+        </div>
+    
+        <div class="containerM">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button class="btn btn-primary" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="containerM" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+          <span class="psw ">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
 
 
 
