@@ -393,27 +393,29 @@ right: 50px;
       }
       
       .overlay .closebtn {
-        position: absolute;
-        top: -10px;
-        right: 25px;
-        font-size: 60px;
+        position: relative;
+left: 3.77%;
+right: 3.76%;
+top: 3.77%;
+bottom: 3.76%;
+
       }
 
       .smallMenu{
         display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 10px 10px 13px 2px;
-gap: 10px;
-width: 197px;
-height: 43px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px 13px 2px;
+        gap: 10px;
+        width: 197px;
+        height: 43px;
 
-/* Inside auto layout */
+        /* Inside auto layout */
 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
       }
       .smallListP{
         top: 10px;
@@ -422,19 +424,19 @@ flex-grow: 0;
       }
       .smallLoginMenu{
         display: flex;
-flex-direction: column;
-text-align: center;
-gap: 10px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
 
-width: 197px;
-height: 43px;
+        width: 197px;
+        height: 43px;
 
 
-/* Inside auto layout */
+        /* Inside auto layout */
 
-flex: none;
-align-self: stretch;
-flex-grow: 0;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
       }
       .loginMenu{
         justify-content: center;
@@ -447,24 +449,24 @@ flex-grow: 0;
       .smallFreeMenu{
         box-sizing: border-box;
 
-/* Auto layout */
+        /* Auto layout */
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 13px 53px;
-gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 13px 53px;
+        gap: 10px;
 
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 13px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 13px;
 
-/* Inside auto layout */
+        /* Inside auto layout */
 
-flex: none;
-flex-grow: 0;
-      }
+        flex: none;
+        flex-grow: 0;
+            }
 
       .firstMenuButton{
         display: none;
@@ -567,17 +569,17 @@ flex-grow: 0;
    .connection{
     display: block;
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 37vw;
-padding-top: 20px;
-height: auto;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-z-index: 0;
-   }
+    flex-direction: column;
+    align-items: flex-start;
+    width: 37vw;
+    padding-top: 20px;
+    height: auto;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+    }
    .manDesk{
     display: none;
     
@@ -585,7 +587,7 @@ z-index: 0;
   
   div .freeTrialButtonLScreen{
     width: 250px;
-left: 10px;
+    left: 10px;
     position: relative;
    }
 
@@ -652,7 +654,7 @@ left: 10px;
         font-size: 27px;
         line-height: 36px;
         /* identical to box height */
-text-align: center;
+        text-align: center;
         letter-spacing: 0.003em;
 
         color: #FFFFFF;
@@ -675,8 +677,8 @@ text-align: center;
 
     div .freeTrialButtonLScreen{
         width: 300px;
-    position: relative;
-    left: 200px;
+        position: relative;
+        left: 200px;
 
     }
 
@@ -772,47 +774,47 @@ text-align: center;
     .closerSm{
         box-sizing: border-box;
 
-position: absolute;
-width: 70px;
-height: 100px;
-left: 0px;
-top: 121px;
-background-repeat: no-repeat;
-background-image: url(/Image/CloserSVG.svg);
-    }
-    .thanYouSm{
-        box-sizing: border-box;
+        position: absolute;
+        width: 70px;
+        height: 100px;
+        left: 0px;
+        top: 121px;
+        background-repeat: no-repeat;
+        background-image: url(/Image/CloserSVG.svg);
+            }
+            .thanYouSm{
+                box-sizing: border-box;
 
-position: absolute;
-height: 150px;
-right: 0px;
+        position: absolute;
+        height: 150px;
+        right: 0px;
 
-background-repeat: no-repeat;
-top: 265px;
-background-image: url(/Image/ThanYouSVG.svg);
-/* purple */
+        background-repeat: no-repeat;
+        top: 265px;
+        background-image: url(/Image/ThanYouSVG.svg);
+        /* purple */
 
-background-size: 50vw;
+        background-size: 50vw;
 
 
 
-    }
+            }
 
 
 
     .thinkSm{
         box-sizing: border-box;
 
-position: absolute;
-width: 327px;
-height: 150px;
-left: 95px;
-top: 407px;
-background-size: 60vw;
-background-repeat: no-repeat;
-background-image:url(/Image/ThinkLearnButtonWhite.svg);
+        position: absolute;
+        width: 327px;
+        height: 150px;
+        left: 95px;
+        top: 407px;
+        background-size: 60vw;
+        background-repeat: no-repeat;
+        background-image:url(/Image/ThinkLearnButtonWhite.svg);
 
-    }
+            }
 
     .thinkSm:hover{
         background-image: url(/Image/ThinkButtonPinkBlack.svg);
@@ -848,29 +850,26 @@ top: 12px;
     }
     */
     .stayCSmScreen{
-      
+        position: absolute;
+        width: 160.12px;
+        height: 170.67px;
+        left: 142.73px;
+        top: 583.39px;
 
+        background-repeat: no-repeat;
+        background-image: url(/Image/Stay\ Connected\ Circle.svg);
 
-position: absolute;
-width: 160.12px;
-height: 170.67px;
-left: 142.73px;
-top: 583.39px;
-
-background-repeat: no-repeat;
-background-image: url(/Image/Stay\ Connected\ Circle.svg);
-
-    }
+            }
     .freeTrialStayButton{
         background-image: url(/Image/FreeTrialStayButtonBlack.svg);
         background-repeat: no-repeat;
         position: absolute;
-width: 179px;
-height: 156px;
-left: 140px;
-top: 591px;
-background-size: 40vw;
-    }
+        width: 179px;
+        height: 156px;
+        left: 140px;
+        top: 591px;
+        background-size: 40vw;
+            }
     .freeTrialStayButton:hover{
         background-image: url(/Image/FreeTrialStayButtonWhite.svg);
     }
